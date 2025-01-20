@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <h1></h1>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database App</title>
+    <style>
+      body {
+        font-family:Arial, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin: 0;
+        background-color: rgb(254, 255, 255);
+      }
+      .login-box {
+        background-color: rgb(137, 181, 173);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(50, 50, 50, 0.1);
+        width: 30px;
+      }
+      .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        width: 840px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #c3c3c3;
+        border-radius: 5px;
+      }
+      .login-box {
+        width: 90%;
+        padding: 10px;
+        background-color: rgb(142, 171, 197);
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .login-box button:hover {
+        background-color: rgb(148, 188, 214);
+      }
+      .login-box .skip-link {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #f3f3f3;
+        text-decoration: none;
+      }
+      .login-box .skip-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Log in</h2>
+      <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log in</button>
+        </form>
+        <a href="/dashboard" class="skip-link">Skip Logging in</a>
+    </div>
+  </body>
+</html>
